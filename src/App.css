@@ -188,7 +188,10 @@ html,body{
   text-align: center;
   color: var(--paper);
   text-shadow: 1px 1px 1px var(--black);
-  font-size: 1.7vmax;
+  font-size: 1.9vmax;
+  font-weight: bold;
+  letter-spacing: 0.65px;
+  font-family:  "Slabo 27px", sans-serif;
 }
 .home-footer-nav li img{
   width:100%;
