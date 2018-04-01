@@ -130,7 +130,7 @@ html,body{
 }
 .about-text{
   font-family: "Slabo 27px", sans-serif;
-  font-size: 2.2vmin;
+  font-size: 1.8vmax;
   max-height: 400px;
   color: var(--charade);
   display: block;
@@ -152,4 +152,25 @@ html,body{
 #about-owner-text{
   text-align:left;
   margin:5vmax 0 0 3vmax;
+}
+
+
+/*Large Displays*/
+@media only screen and (min-width:1400px){
+  /*About*/
+  .about-text{
+    font-size:29px;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width:700px){
+  /*About*/
+  .about-text{
+    font-size:2.2vmin;
+    margin-top:3vmin !important;
+  }
+  .about-img{
+    width:39vmin;
+  }
 }
