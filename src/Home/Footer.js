@@ -5,7 +5,18 @@ class Footer extends Component {
     return (
         <section id="home-footer">
             <ul className="home-footer-nav">
-                <li></li>
+                <li>
+                    <img src={require(".././images/artists-img.jpg")} />
+                    <h1>Artists</h1>
+                </li>
+                <li>
+                    <img src={require(".././images/calendar.jpeg")} />
+                    <h1>Schedule an Appointment</h1>
+                </li>
+                <li>
+                    <img src={require(".././images/gallery.jpg")} />
+                    <h1>Shop Gallery</h1>    
+                </li>
             </ul>
             <div className="home-footer-social">
 
