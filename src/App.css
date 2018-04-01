@@ -1,9 +1,11 @@
 html,body{
   padding:0;
   margin:0;
+  text-align: center;
 }
 :root{
   --vermillion:#FF4500;
+  --darkred:#b22f2f;
   --cinnabar:#E74C3C;
   --charade:#282c37;
   --meadow:#1ABC9C;
@@ -51,13 +53,10 @@ html,body{
   display:block;
   content: '';
   margin-top:5px;
-  border-bottom:3px solid var(--cinnabar);
+  border-bottom:3px solid var(--darkred);
   transform: scaleX(0);  
   transition: transform 130ms ease-in-out;
   border-radius:1px;
-}
-.nav-item:hover{
-  color:var(--cinnabar);
 }
 .nav-item:hover:after { transform: scaleX(1); }
 .left-nav li{margin: 1vmax 2vmax 1vmax 0vmax;}
@@ -79,7 +78,7 @@ html,body{
 #landing{
   width: 100%;
   position: relative;
-  height: 75vh;
+  height: 70vh;
   max-height: 700px;
   overflow: hidden;
 }
@@ -94,4 +93,63 @@ html,body{
   z-index: -100;
   background-size: cover;
   overflow: hidden;
+}
+/*About*/
+#about{
+  width:100%;
+  background-color:var(--paper);
+  position: relative;
+}
+.about-header{
+  text-align: center;
+  position: relative;
+  top: -3.5vmax;
+}
+.about-header h1{
+  font-size: 4vmax;
+  margin: 0;
+  color: var(--paper);
+  display: inline-block;
+  padding: 1vmax 2vmax;
+  letter-spacing: 1.3px;
+  background-color: var(--black);
+  text-transform: uppercase;
+  font-family: "Cuprum", sans-serif;
+}
+.about-shop,.about-owner{
+  height: 38vmax;
+  max-height: 465px;
+  width:100%;
+  overflow: hidden;
+}
+.about-img{
+  display:inline-block;
+  margin: 0 3vmax 0 3vmax;
+  width: 31vmax;
+  max-width: 400px;
+}
+.about-text{
+  font-family: "Slabo 27px", sans-serif;
+  font-size: 2.2vmin;
+  max-height: 400px;
+  color: var(--charade);
+  display: block;
+  height: inherit;
+  width: 90%;
+  word-break: break-all;
+  float: none;
+}
+#about-shop-img{
+  float: left;
+}
+#about-shop-text{
+  text-align: left;
+  margin-top:4vmax;
+}
+#about-owner-img{
+  float:right;
+}
+#about-owner-text{
+  text-align:left;
+  margin:5vmax 0 0 3vmax;
 }

@@ -5,8 +5,8 @@ class Nav extends Component {
     return (
         <nav id="landing-nav">
             <ul className="left-nav">
-                <li className="nav-item"><a href="#">Home</a></li>
-                <li className="nav-item"><a href="#">About</a></li>
+                <li className="nav-item"><a href="#landing">Home</a></li>
+                <li className="nav-item"><a href="#about">About</a></li>
                 <li className="nav-item"><a href="#">Artists</a></li >
             </ul >
             <ul className="right-nav">
