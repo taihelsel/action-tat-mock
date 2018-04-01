@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '.././App.css';
 class About extends Component {
   render() {
+      
     return (
         <section id="about">
             <div className="about-header"><h1>Our Story</h1></div>
