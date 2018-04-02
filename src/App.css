@@ -91,6 +91,35 @@ html,body{
   max-height: 700px;
   overflow: hidden;
 }
+.landing-links{
+  margin-top: 20vmax;
+  list-style: none;
+  padding: 0;
+}
+.landing-link-item{
+  display: inline-block;
+  font-size: 2.7vmax;
+  font-family: "Cuprum", sans-serif;
+  font-weight: bolder;
+  background-color:var(--black);
+  color: var(--paper);
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+}
+.landing-link-item:hover{
+  background-color:#FF7E47;
+}
+.landing-link-item:nth-child(1) {
+  float:left;
+  margin-left:8vmax;
+  padding: 2.5vmax 4vmax;
+}
+.landing-link-item:nth-child(2) {
+  float:right;
+  margin-right:8vmax;
+  padding: 2.5vmax 5vmax;
+}
 .landing-video{
   position: fixed;
   right: 0;
