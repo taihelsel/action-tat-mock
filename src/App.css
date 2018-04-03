@@ -115,10 +115,11 @@ html,body{
   border-radius: 2px;
   padding:2vmax 3vmax; 
   margin:0 16vmax 0 9vmax;
+  transition: all 0.2s linear;
 }
 .landing-link-item:hover{
+  border:2px solid var(--orange);
   background-color:var(--orange);
-  border:4px solid var(--orange);
 }
 .landing-video{
   position: fixed;
