@@ -47,6 +47,7 @@ html,body{
   font-family: 'Permanent Marker', cursive;
   position: relative;
   transition: all ease-in-out 200ms;
+  z-index: 3;
 }
 .nav-item a{
   text-decoration: none;
