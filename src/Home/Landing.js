@@ -5,7 +5,7 @@ class Landing extends Component {
     return (
         <section id="landing">
             <ul className="landing-links">
-                <li className="landing-link-item"><a>View Shop Gallery</a></li>
+            <li className="landing-link-item"><a>View Shop Gallery</a></li>
                 <li className="landing-link-item"><a>Book Now</a></li>
             </ul>
             <video loop autoPlay className="landing-video">
