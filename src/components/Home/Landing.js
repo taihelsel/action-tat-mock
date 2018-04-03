@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '.././App.css';
+import '../.././App.css';
 class Landing extends Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class Landing extends Component {
                 <li className="landing-link-item"><a>Book Now</a></li>
             </ul>
             <video loop autoPlay className="landing-video">
-                <source src={require(".././videos/tattoo-closeup.mp4")} type="video/mp4" />
+                <source src={require("../.././videos/tattoo-closeup.mp4")} type="video/mp4" />
             </video>
         </section>
     );

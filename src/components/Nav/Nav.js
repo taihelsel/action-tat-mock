@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '.././App.css';
+import '../.././App.css';
 class Nav extends Component {
   render() {
     return (
@@ -14,7 +14,7 @@ class Nav extends Component {
                 <li className="nav-item"><a href="#">After Care</a></li>
                 <li className="nav-item"><a href="#">Merchandise</a></li>
             </ul >
-            <div className="nav-logo"><img src={require(".././images/action-tattoo-emblem.png")} alt="Action tattoo logo" /></div>
+            <div className="nav-logo"><img src={require("../.././images/action-tattoo-emblem.png")} alt="Action tattoo logo" /></div>
         </nav>
     );
   }

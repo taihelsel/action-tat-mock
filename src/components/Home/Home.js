@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '.././App.css';
+import '../.././App.css';
 
 /*React Components*/
 import Landing from "./Landing.js";
