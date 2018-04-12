@@ -5,6 +5,7 @@ import './App.css';
 import Nav from "./components/Nav/Nav.js";
 import Home from  "./components/Home/Home.js";
 import Artists from "./components/Artists/Artists.js";
+const BASE_URL = "/action-tat-mock";
 class App extends Component {
   componentDidMount(){
     const root = document.getElementById("root");
@@ -23,8 +24,8 @@ class App extends Component {
           <Router>
             <div>
               <Nav />
-              <Route exact path="/" component={Home} />
-              <Route path="/artists" component={Artists} />
+              <Route exact path={`${BASE_URL}`} component={Home} />
+              <Route path={`${BASE_URL}/artists`} component={Artists} />
             </div>
           </Router>
     );
