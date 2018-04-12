@@ -4,12 +4,13 @@ import './App.css';
 /*React Components*/
 import Nav from "./components/Nav/Nav.js";
 import Home from  "./components/Home/Home.js";
+import Artists from "./components/Artists/Artists.js";
 class App extends Component {
   componentDidMount(){
-    const landing = document.getElementById("landing");
+    const root = document.getElementById("root");
     window.addEventListener("scroll", () => {
-      const landing_bottom = landing.getBoundingClientRect().bottom;
-      if(landing_bottom<450){
+      const root_bottom = root.getBoundingClientRect().top;
+      if(root_bottom < -100){
         //Set nav logo inside nav
         document.getElementsByClassName("nav-logo")[0].classList.add("nav-logo-inset");
       }else{
@@ -19,12 +20,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Nav />
-        <Router>
-          <Route path="/" component={Home} />
-        </Router>
-      </div>
+          <Router>
+            <div>
+              <Nav />
+              <Route exact path="/" component={Home} />
+              <Route path="/artists" component={Artists} />
+            </div>
+          </Router>
     );
   }
 }

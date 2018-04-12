@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import '../.././App.css';
 class Nav extends Component {
   render() {
     return (
         <nav id="landing-nav">
             <ul className="left-nav">
-                <li className="nav-item"><a href="#landing">Home</a></li>
-                <li className="nav-item"><a href="#about">About</a></li>
-                <li className="nav-item"><a href="#">Artists</a></li >
+                <li className="nav-item"><Link to="/">Home</Link></li>
+                <li className="nav-item"><Link to="/#about">About</Link></li>
+                <li className="nav-item"><Link to="/artists">Artists</Link></li>
             </ul >
             <ul className="right-nav">
                 <li className="nav-item"><a href="#">Gallery</a></li>
